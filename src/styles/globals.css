@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-slate-100 bg-slate-900;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-full transition-all duration-300;
+  }
+  
+  .card {
+    @apply bg-slate-800 rounded-2xl shadow-xl;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+}
